@@ -8,8 +8,8 @@ st.title('Predicción de riesgo actuarial-Su Nombre-UTH-Computación en la nube'
 
 @st.cache_resource
 def cargar_modelo():
-    pkl = 'kmeans_riesgo_actuarial.pkl' if os.path.exists('kmeans_riesgo_actuarial.pkl') else 'kmeans_riesgo_actuarial.pkl'
-    meta = 'model_metadata.json' if os.path.exists('model_metadata.json') else 'model_metadata.json'
+    pkl = 'kmeans_riesgo_actuarial.pkl' if os.path.exists('kmeans_riesgo_actuarial.pkl') else 'kmeans_riesgo_actuarial(2).pkl'
+    meta = 'model_metadata.json' if os.path.exists('model_metadata.json') else 'model_metadata(2).json'
     
     modelo = joblib.load(pkl)
 
